@@ -31,44 +31,19 @@ body
 	-moz-box-shadow: 0 8px 6px -6px black;
 	box-shadow: 0 12px 20px -6px black;
 }
-.txt-sml
+.form h5
 {
-	height: 40px;
-	width: 100%;
-	margin-bottom: 20px;
-	border:0px;
-	border-bottom: 2px solid #508AA8;
-	box-shadow: 0 5px 5px -6px rgba(0,0,0,0.8);
-	outline: none;
-	-webkit-transition:all 0.5s;
+	font-weight: bold;
+	color: #424242;
 }
-.txt-sml:focus
+.form p
 {
-	outline: none;
-	box-shadow: 0 10px 10px -6px rgba(0,0,0,0.8); 
-}
-.btn-sml
-{
-	margin: auto;
-	font-size: 17px;
-	height:40px;
-	background-color: #508AA8;
-	border:0px;
-	color: white;
+	font-size: 15px;
 	font-family: 'Montserrat', sans-serif;
-	letter-spacing: 2px;
-	padding-left: 20px;
-	padding-right: 20px;
-	border-radius: 5px;
-	-webkit-transition:0.5s;
 }
-.btn-sml:focus
+.design
 {
-	outline: hidden;
-}
-.btn-sml:hover
-{
-	box-shadow: 0 10px 10px -6px rgba(0,0,0,0.8);
+	height: 150px;
 }
 .menu
 {
