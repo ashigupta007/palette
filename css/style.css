@@ -10,12 +10,14 @@ body
 	width: 100%;
 	background-size: cover;
 	background-position: fixed;
+	position: fixed;
 }
 .overlayer
 {
 	height: 100%;
 	width: 100%;
 	padding-top: 10%;
+	position: fixed;
 	background: linear-gradient(to bottom right, rgba(21, 50, 67,0.8),rgba(21, 50, 67,0.8),rgba(21, 50, 67,0.8), rgba(209, 102, 102,0.8 ));
 }
 .form
@@ -41,10 +43,72 @@ body
 	font-size: 15px;
 	font-family: 'Montserrat', sans-serif;
 }
+.head img
+{
+	display: inline-block;
+	margin-top: -5px;
+}
 .design
 {
 	height: 150px;
 }
+.form .col-sm-12
+{
+    border:2px solid #8A8A8A;
+}
+.head
+{
+   	width: 250px;
+    margin-top: -30px;
+    background-color: white;
+    padding-left: 20px;
+}
+.head h2
+{
+	margin-left: 20px;
+}
+@media only screen and (max-width: 850px) 
+{
+	.form
+	{
+		width: 60%;
+	}
+	.overlayer
+	{
+		padding-top: calc(10% + 50px);
+	}
+}
+@media only screen and (max-width: 650px)
+{
+	.form
+	{
+		width: 80%;
+	}
+} 
+@media only screen and (max-width: 450px)
+{
+	.form
+	{
+		width: 90%;
+	}
+	.overlayer
+	{
+		padding-top: calc(11% + 50px);
+	}
+}
+@media only screen and (max-width: 400px)
+{
+	.head img
+	{
+		display: none;
+	}
+	.head
+	{
+		width: 170px;
+		padding-left: 0px;
+	}
+} 
+/*############################*/
 .menu
 {
 	height: 100%;
