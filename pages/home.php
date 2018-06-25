@@ -23,7 +23,7 @@
 		<div class="col-sm-4">
 			<div class="menu">
 				<div class="header">
-					<img src="images/icon.png">
+					<img src="../images/icon.png">
 					<h1>Palette</h1>
 					<div class="dropdown">
 						<button class="dropdown-toggle" data-toggle="dropdown">
@@ -36,11 +36,11 @@
 	  					</ul>
   					</div>
 				</div>
-				<ul class="menu-cont">
-					<li class="menu-item add">
-						<button class="add-icon">+</button>	Add Project
-					</li>
-				</ul>
+
+				<div class="menu-item">
+					
+				</div>
+				
 			</div>
 		</div>
 		<div class="col-sm-8">
