@@ -38,7 +38,7 @@
 				</div>
 
 				<div class="menu-item">
-					
+					<img src="" id="profile_pic">
 				</div>
 				
 			</div>
@@ -65,6 +65,9 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <meta name="google-signin-client_id" content="216440914229-ip8fva7r9j5nu2f1c2redlqko1150bqe.apps.googleusercontent.com">
 </html>
 
 </html>

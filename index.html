@@ -15,10 +15,74 @@
     <link rel="manifest" href="manifest.json">
 
     <link rel="icon" type="image/png" href="images/icon.png">
+    
+    <style type="text/css">
+    	.loader_maincont
+    	{
+    		left: 0;
+    		right: 0;
+    		top: 0;
+    		bottom: 0;
+    		position: absolute;
+    		display: flex;
+    		z-index: 99;
+    		background-color: white;
+    	}
+    	.loader {
+		  position: absolute;
+		  top: 50%;
+		  left: 48%;
+		}
+
+		.line {
+		  animation: expand 1.5s ease-in-out infinite;
+		  border-radius: 10px;
+		  display: inline-block;
+		  transform-origin: center center;
+		  margin: 0 3px;
+		  width: 1.5px;
+		  height: 25px;
+		}
+
+		.line:nth-child(1) {
+		  background: #27ae60;
+		}
+
+		.line:nth-child(2) {
+		  animation-delay: 180ms;
+		  background: #f1c40f;
+		}
+
+		.line:nth-child(3) {
+		  animation-delay: 360ms;
+		  background: #e67e22;
+		}
+
+		.line:nth-child(4) {
+		  animation-delay: 540ms;
+		  background: #2980b9;
+		}
+
+		@keyframes expand {
+		  0% {
+		    transform: scale(1);
+		  }
+		  25% {
+		    transform: scale(2);
+		  }
+		}	
+    </style>
 </head>
 
 <body>
-
+	<div class="loader_maincont" id="loader_maincont">
+		<div class="loader" id="loader_maincont">
+	  		<div class="line"></div>
+	  		<div class="line"></div>
+	  		<div class="line"></div>
+	  		<div class="line"></div>
+		</div>
+	</div>
 	<div class="maincont">
 		<div class="overlayer">
 			<div class="form">
@@ -74,7 +138,11 @@
            .then(function() { console.log("Service Worker Registered"); });
 		}
 	</script>-->
-
+	<script>
+		$(window).on('load',(function() {
+  		$("#loader_maincont").delay(2000).fadeOut("slow");
+		}));
+	</script>
 </html>
 
 </html>
