@@ -11,56 +11,10 @@
     <meta name="theme-color" content="#1E90FF">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-    <link rel="manifest" href="../manifest.json">
-
-    <link rel="icon" type="image/png" href="../images/icon.png">
 </head>
 
-<body onload="load('default')">
+<body>
 
-	<div class="row">
-		<div class="col-sm-4 padding-0">
-			<div class="menu">
-				<div class="header">
-					<img src="../images/icon.png">
-					<h1>Palette</h1>
-					
-  					<div class="profile_cont">
-  						<img src="../images/sample_man.png" class="img-circle"><!--will be changed afterwards-->
-  						<p>Ashish Gupta</p>
-
-  						<div class="dropdown">
-						<button class="dropdown-toggle" data-toggle="dropdown">
-							<i class="fas fa-ellipsis-v"></i>
-						</button>
-						<ul class="dropdown-menu dropdown-menu-right">
-	    					<li><a href="#">Profile</a></li>
-	    					<li><a href="#">Logout</a></li>
-	    					<li><a href="#">Help?</a></li>
-	  					</ul>
-  					</div>
-  					</div>
-				</div>
-				<div class="menu-cont">
-					<!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
-					<div class="menu-item" onclick="load('addnew')">
-						<div class="icon-cont">
-							<img src="../images/add-icon.png" class="img-circle">
-						</div>
-						<div class="text-cont">
-							Add A New Project
-						</div>
-					</div>
-					<!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
-				</div>
-				
-			</div>
-		</div>
-		<div class="col-sm-8 padding-0"id="container">
-			
-		</div>
-	</div>
 
 
 </body>
