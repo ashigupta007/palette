@@ -238,6 +238,7 @@ body
 	font-weight: bolder;
 	border-bottom: 1px solid #F0F0F0;
 	float: right;
+	color: #7D7D7D;
 }
 .menu-item:hover
 {
@@ -251,6 +252,7 @@ body
 .menu-cont
 {
 	overflow-y: auto;
+	height: calc(100% - 150px);
 }
 ::-webkit-scrollbar {
     width: 5px;
@@ -263,10 +265,10 @@ body
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #BDBDBD; 
+    background:#DEDEDE; 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #BDBDBD; 
+    background:#DEDEDE; 
 }

@@ -16,3 +16,9 @@ function signOut()
       console.log('User signed out.');
     });
 }
+function load(page)
+{
+	 var toload=page+".php";
+	 console.log(toload);
+	$("#container").load(page+".php");
+}

@@ -17,7 +17,7 @@
     <link rel="icon" type="image/png" href="../images/icon.png">
 </head>
 
-<body>
+<body onload="load('addnew')">
 
 	<div class="row">
 		<div class="col-sm-4">
@@ -43,7 +43,8 @@
   					</div>
 				</div>
 				<div class="menu-cont">
-					<div class="menu-item">
+					<!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+					<div class="menu-item" onclick="load('addnew')">
 						<div class="icon-cont">
 							<img src="../images/add-icon.png" class="img-circle">
 						</div>
@@ -51,11 +52,12 @@
 							Add A New Project
 						</div>
 					</div>
+					<!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
 				</div>
 				
 			</div>
 		</div>
-		<div class="col-sm-8" id="div1">
+		<div class="col-sm-8" id="container">
 			
 		</div>
 	</div>
