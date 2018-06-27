@@ -282,7 +282,7 @@ body
 }
 .default
 {
-	height: 100%;
+	height: 100%!important;
 	text-align: center;
 	background-color: #FAFAFA;
 	padding:30px;
@@ -314,6 +314,28 @@ body
 .footer img
 {
 	width: 100%;
-	margin-bottom: -50px;
+}
+#container
+{
+	height: 100%;
 }
 /*########################################*/
+.add-new 
+{
+	padding-top: 0px!important;
+	background-color:#FAFAFA;
+	height: 100%; 
+}
+.add-new .page-title
+{
+	width: 100%;
+	height:auto;
+	padding-top: 30px;
+	padding-left: 30px;
+	font-weight:lighter;
+	letter-spacing:2px;
+	font-size: 30px;
+	color:#616161;
+	word-spacing: 10px;
+	font-family: 'Questrial', sans-serif;
+}

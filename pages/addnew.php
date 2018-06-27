@@ -14,9 +14,11 @@
 </head>
 
 <body>
-
-	
-
+	<div class="add-new">
+		<div class="page-title">
+			Start New Project !
+		</div>
+	</div>
 </body>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 
@@ -29,8 +31,6 @@
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 
     <script type="text/javascript" src="../js/app.js"></script>
-
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Qwigley" rel="stylesheet">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 

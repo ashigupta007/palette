@@ -57,7 +57,7 @@
 				
 			</div>
 		</div>
-		<div class="col-sm-8 padding-0"id="container">
+		<div class="col-sm-8 padding-0" id="container">
 			
 		</div>
 	</div>
