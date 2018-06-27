@@ -4,10 +4,14 @@ function onSignIn(googleUser) {
   console.log('Name: ' + profile.getName());
   console.log('Image URL: ' + profile.getImageUrl());
   console.log('Email: ' + profile.getEmail());
+
+  localStorage.setItem("name", profile.getName());
+
+  window.location = "pages/home.php";
 }
 function signOut() 
 {
-    var auth2 = api.auth2.getAuthInstance();
+    var auth2 = gapi.auth2.getAuthInstance();
     auth2.signOut().then(function () {
       console.log('User signed out.');
     });

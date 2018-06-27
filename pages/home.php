@@ -25,7 +25,12 @@
 				<div class="header">
 					<img src="../images/icon.png">
 					<h1>Palette</h1>
-					<div class="dropdown">
+					
+  					<div class="profile_cont">
+  						<img src="../images/sample_man.png" class="img-circle"><!--will be changed afterwards-->
+  						<p>Ashish Gupta</p>
+
+  						<div class="dropdown">
 						<button class="dropdown-toggle" data-toggle="dropdown">
 							<i class="fas fa-ellipsis-v"></i>
 						</button>
@@ -35,18 +40,26 @@
 	    					<li><a href="#">Help?</a></li>
 	  					</ul>
   					</div>
+  					</div>
 				</div>
-
-				<div class="menu-item">
-					<img src="" id="profile_pic">
+				<div class="menu-cont">
+					<div class="menu-item">
+						<div class="icon-cont">
+							<img src="../images/add-icon.png" class="img-circle">
+						</div>
+						<div class="text-cont">
+							Add A New Project
+						</div>
+					</div>
 				</div>
 				
 			</div>
 		</div>
-		<div class="col-sm-8">
+		<div class="col-sm-8" id="div1">
 			
 		</div>
 	</div>
+
 
 </body>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
@@ -68,6 +81,7 @@
     <script src="https://apis.google.com/js/platform.js" async defer></script>
 
     <meta name="google-signin-client_id" content="216440914229-ip8fva7r9j5nu2f1c2redlqko1150bqe.apps.googleusercontent.com">
-</html>
+
+	<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
 
 </html>
