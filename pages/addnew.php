@@ -18,6 +18,18 @@
 		<div class="page-title">
 			Start New Project !
 		</div>
+		<div class="form-cont">
+				<form>
+					<p class="description">Choose Your Project Icon and Name</p>
+					<label for="files" style="display: inline-block;">
+						<img src="../images/default.png" class="project-icon img-circle">
+					</label>
+
+      				<input id="files" style="visibility:hidden;" type="file">
+
+      				<input type="text" name="project_name" class="txt-sml">
+				</form>
+			</div>
 	</div>
 </body>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
