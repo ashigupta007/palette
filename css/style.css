@@ -318,6 +318,7 @@ body
 #container
 {
 	height: 100%;
+	overflow-y: auto;
 }
 /*########################################*/
 .add-new 
@@ -325,6 +326,7 @@ body
 	padding-top: 0px!important;
 	background-color:#FAFAFA;
 	height: 100%; 
+	font-family: 'Questrial', sans-serif;
 }
 .add-new .page-title
 {
@@ -371,4 +373,34 @@ body
 	border:0px;
 	border-bottom: 2px solid #7F7F7F;
 	display: inline-block;
+	width: 250px;
+	font-size: 17px;
+}
+.txt-sml:focus
+{
+	outline: none;
+}
+label
+{
+	display: inline-block;
+	margin-right: 30px;
+}
+.color-cont
+{
+	text-align: center;
+	margin-top: 30px;
+}
+.color-cont .custom-col-sm-2
+{
+	width:calc(100% / 7);
+	display: inline-block;
+	height: 200px;
+	text-align: center;
+	border:3px solid #D4D4D4;
+	background-color: white;
+	vertical-align: top;
+}
+.txt-sml-2
+{
+	margin-top: 50%;
 }

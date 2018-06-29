@@ -1,3 +1,11 @@
+<?php
+	session_start();
+
+	if($_SESSION['is_logged_in']==0)
+	{
+		header("location:../index.php");
+	}
+?>
 <html>
 <head>
 	<title>
@@ -11,8 +19,6 @@
     <meta name="theme-color" content="#1E90FF">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-    <link rel="manifest" href="../manifest.json">
 
     <link rel="icon" type="image/png" href="../images/icon.png">
 </head>
@@ -36,7 +42,7 @@
 						</button>
 						<ul class="dropdown-menu dropdown-menu-right">
 	    					<li><a href="#">Profile</a></li>
-	    					<li><a href="#">Logout</a></li>
+	    					<li><a href="#" onclick="signOut();">Logout</a></li>
 	    					<li><a href="#">Help?</a></li>
 	  					</ul>
   					</div>
@@ -72,18 +78,15 @@
 
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-
-    <script type="text/javascript" src="../js/app.js"></script>
+    <script type="text/javascript" src="../js/app.js" async="true"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Qwigley" rel="stylesheet">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
 
     <meta name="google-signin-client_id" content="216440914229-ip8fva7r9j5nu2f1c2redlqko1150bqe.apps.googleusercontent.com">
 
 	<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
-
 </html>

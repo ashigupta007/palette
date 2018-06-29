@@ -21,13 +21,14 @@
 		<div class="form-cont">
 				<form>
 					<p class="description">Choose Your Project Icon and Name</p>
+					<input id="files" style="visibility:hidden;" type="file">
 					<label for="files" style="display: inline-block;">
 						<img src="../images/default.png" class="project-icon img-circle">
 					</label>
 
-      				<input id="files" style="visibility:hidden;" type="file">
-
-      				<input type="text" name="project_name" class="txt-sml">
+      				<input type="text" name="project_name" class="txt-sml" autocomplete="off" placeholder="Poject Title">
+      				  <p class="description" style="margin-top: 30px;">Choose Your Color Scheme</p>
+      				</div>
 				</form>
 			</div>
 	</div>
