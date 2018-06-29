@@ -1,8 +1,12 @@
 function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
-  var name=profile.getName();
-  var img_url=profile.getImageUrl();
-  var email=profile.getEmail();
+   name=profile.getName();
+   img_url=profile.getImageUrl();
+   email=profile.getEmail();
+   localStorage.setItem("name", name);
+   $.post("signin.php", { name:name, email:email } ,function(data){
+          console.log(response);
+        });
 
   window.location="pages/home.php";
 }

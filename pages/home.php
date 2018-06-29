@@ -1,11 +1,3 @@
-<?php
-	session_start();
-
-	if($_SESSION['is_logged_in']==0)
-	{
-		header("location:../index.php");
-	}
-?>
 <html>
 <head>
 	<title>
@@ -34,8 +26,12 @@
 					
   					<div class="profile_cont">
   						<img src="../images/sample_man.png" class="img-circle"><!--will be changed afterwards-->
-  						<p>Ashish Gupta</p>
-
+  						<p id="name">
+  							
+  						</p>
+  						<script type="text/javascript">
+  							document.getElementById('name').innerHTML=localStorage.getItem('name');
+  						</script>
   						<div class="dropdown">
 						<button class="dropdown-toggle" data-toggle="dropdown">
 							<i class="fas fa-ellipsis-v"></i>
