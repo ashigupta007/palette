@@ -4,6 +4,7 @@ function onSignIn(googleUser) {
    img_url=profile.getImageUrl();
    email=profile.getEmail();
    localStorage.setItem("name", name);
+   localStorage.setItem("profpic", img_url);
    $.post("signin.php", { name:name, email:email } ,function(data){
           console.log(response);
         });
@@ -26,4 +27,16 @@ function load(page)
 {
 	var toload=page+".php";
 	$("#container").load(page+".php");
+}
+function display_color(current,dest)
+{
+	if (current.getAttribute && current.value.length==current.getAttribute("maxlength"))
+	{
+		var color="#" + current.value;
+		console.log(color);
+		console.log(dest);
+		var div=document.getElementById(dest);
+		div.setAttribute('class','popup');
+		div.setAttribute('style','background-color:' + color + ';');
+	}
 }

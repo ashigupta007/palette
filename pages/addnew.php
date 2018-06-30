@@ -20,15 +20,25 @@
 		</div>
 		<div class="form-cont">
 				<form>
+
+					<!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
 					<p class="description">Choose Your Project Icon and Name</p>
 					<input id="files" style="visibility:hidden;" type="file">
 					<label for="files" style="display: inline-block;">
 						<img src="../images/default.png" class="project-icon img-circle">
 					</label>
-
       				<input type="text" name="project_name" class="txt-sml" autocomplete="off" placeholder="Poject Title">
-      				  <p class="description" style="margin-top: 30px;">Choose Your Color Scheme</p>
-      				</div>
+      				<p class="description" style="margin-top: 30px;">Choose Your Theme Color</p>
+      				  
+
+      				<!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+      				<p class="label">Theme Color</p>
+      				<input type="text" name="themecolor" placeholder="#ffffff" class="txt-sml" maxlength="6" onchange="display_color(this,'themecolor')" autocomplete="off">
+      				<div class="singelton-color-display" id="themecolor"></div>
+
+      				<!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+      				<p class="description" style="margin-top: 30px;">Choose Your Color Combination</p>
+      				
 				</form>
 			</div>
 	</div>

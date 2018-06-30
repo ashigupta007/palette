@@ -25,12 +25,15 @@
 					<h1>Palette</h1>
 					
   					<div class="profile_cont">
-  						<img src="../images/sample_man.png" class="img-circle"><!--will be changed afterwards-->
+  						<img src="../images/sample_man.png" class="img-circle" id="profpic"><!--will be changed afterwards-->
   						<p id="name">
   							
   						</p>
   						<script type="text/javascript">
   							document.getElementById('name').innerHTML=localStorage.getItem('name');
+  							document.getElementById('profpic').setAttribute("src", localStorage.getItem('profpic'));
+
+  							console.log(localStorage.getItem('profpic'));
   						</script>
   						<div class="dropdown">
 						<button class="dropdown-toggle" data-toggle="dropdown">

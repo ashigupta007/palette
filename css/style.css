@@ -99,7 +99,7 @@ body
 	}
 	.overlayer
 	{
-		padding-top: calc(11% + 50px);
+		padding-top: calc(11%);
 	}
 }
 @media only screen and (max-width: 400px)
@@ -403,4 +403,46 @@ label
 .txt-sml-2
 {
 	margin-top: 50%;
+}
+.label
+{
+	display: inline-block;
+	font-size: 17px !important;
+	color:#616161 !important;
+	margin-right: 30px;
+}
+.singelton-color-display
+{
+	display: inline-block;
+	margin-left: 50px;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	padding: 0px;
+	background-color: transparent;
+}
+.popup
+{
+	display: inline-block;
+	margin-left: 50px;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	padding: 0px;
+	box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+	-webkit-animation-name:popup;
+	-webkit-animation-duration:200ms;
+	-webkit-animation-iteration-count:1;
+	-webkit-animation-fill-mode:forwards;
+}
+@keyframes popup
+{
+  from 
+  {
+    transform: scale(0);
+  }
+  to 
+  {
+    transform: scale(1);
+  }
 }
