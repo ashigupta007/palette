@@ -33,12 +33,15 @@
 
       				<!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
       				<p class="label">Theme Color</p>
-      				<input type="text" name="themecolor" placeholder="#ffffff" class="txt-sml" maxlength="6" onchange="display_color(this,'themecolor')" autocomplete="off">
+      				<input type="text" name="themecolor" placeholder="#ffffff" class="txt-sml" maxlength="6" onkeydown="display_color(this,'themecolor')" autocomplete="off">
       				<div class="singelton-color-display" id="themecolor"></div>
 
       				<!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
-      				<p class="description" style="margin-top: 30px;">Choose Your Color Combination</p>
-      				
+      				<p class="description" style="margin-top: 30px;">Add Your Color Combination</p>
+      				<div class="col-sm-6 color-cont">
+
+      					<div class="color-cont-display"></div>
+      				</div>
 				</form>
 			</div>
 	</div>

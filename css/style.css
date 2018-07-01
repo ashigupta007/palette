@@ -201,13 +201,11 @@ body
 {
 	background-color: #DEDEDE !important;
 	color: #616161;
-	box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
 }
 .dropdown-toggle:focus
 {
 	background-color: #DEDEDE !important;
 	color: #616161;
-	box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
 }
 .dropdown
 {
@@ -445,4 +443,10 @@ label
   {
     transform: scale(1);
   }
+}
+.color-cont-display
+{
+	height: 50px;
+	width: 150px;
+	border:1px solid black;
 }

@@ -15,7 +15,7 @@
     <link rel="icon" type="image/png" href="../images/icon.png">
 </head>
 
-<body onload="load('default')">
+<body>
 
 	<div class="row">
 		<div class="col-sm-4 padding-0">
@@ -29,12 +29,7 @@
   						<p id="name">
   							
   						</p>
-  						<script type="text/javascript">
-  							document.getElementById('name').innerHTML=localStorage.getItem('name');
-  							document.getElementById('profpic').setAttribute("src", localStorage.getItem('profpic'));
-
-  							console.log(localStorage.getItem('profpic'));
-  						</script>
+  						
   						<div class="dropdown">
 						<button class="dropdown-toggle" data-toggle="dropdown">
 							<i class="fas fa-ellipsis-v"></i>
@@ -88,4 +83,17 @@
     <meta name="google-signin-client_id" content="216440914229-ip8fva7r9j5nu2f1c2redlqko1150bqe.apps.googleusercontent.com">
 
 	<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+
+	<script type="text/javascript">
+		$(window).on('load',(function() {
+			load('default');
+		}));
+	</script>
+	<script type="text/javascript">
+  							document.getElementById('name').innerHTML=localStorage.getItem('name');
+  							document.getElementById('profpic').setAttribute("src", localStorage.getItem('profpic'));
+
+  							console.log(localStorage.getItem('profpic'));
+  						</script>
+	
 </html>
