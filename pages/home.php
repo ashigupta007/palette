@@ -12,6 +12,8 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
+    <meta name="google-signin-client_id" content="216440914229-ip8fva7r9j5nu2f1c2redlqko1150bqe.apps.googleusercontent.com">
+    
     <link rel="icon" type="image/png" href="../images/icon.png">
 </head>
 
@@ -78,22 +80,15 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
-    <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
-
-    <meta name="google-signin-client_id" content="216440914229-ip8fva7r9j5nu2f1c2redlqko1150bqe.apps.googleusercontent.com">
-
 	<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
 
 	<script type="text/javascript">
-		$(window).on('load',(function() {
-			load('default');
-		}));
-	</script>
-	<script type="text/javascript">
-  							document.getElementById('name').innerHTML=localStorage.getItem('name');
-  							document.getElementById('profpic').setAttribute("src", localStorage.getItem('profpic'));
+			document.getElementById('name').innerHTML=localStorage.getItem('name');
+  			document.getElementById('profpic').setAttribute("src", localStorage.getItem('profpic'));
 
-  							console.log(localStorage.getItem('profpic'));
-  						</script>
-	
+  			$(window).on('load',(function() {
+  				load('default');
+			}));
+	</script>
+	<script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
 </html>

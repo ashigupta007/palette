@@ -40,3 +40,17 @@ function display_color(current,dest)
 		div.setAttribute('style','background-color:' + color + ';');
 	}
 }
+function display_color_palette(current,dest)
+{
+	if (current.getAttribute && current.value.length==current.getAttribute("maxlength"))
+	{
+		var color="#" + current.value;
+		console.log(color);
+		console.log(dest);
+		var div=document.getElementById('color_1');
+		console.log(div);
+		div.removeAttribute('class');
+		div.setAttribute('class','color-cont-display-2');
+		div.setAttribute('style','background-color:' + color + ';');
+	}
+}

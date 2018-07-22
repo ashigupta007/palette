@@ -38,9 +38,11 @@
 
       				<!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
       				<p class="description" style="margin-top: 30px;">Add Your Color Combination</p>
-      				<div class="col-sm-6 color-cont">
-
-      					<div class="color-cont-display"></div>
+      				<div class="color-cont">
+      					<div class="sub-cont">
+      						<div class="color-cont-display" id="color_1"></div>
+      						<input type="text" name="color-1" placeholder="#ffffff" onkeydown="display_color_palette(this,'color_1')" autocomplete="off" maxlength="6">
+      					</div>
       				</div>
 				</form>
 			</div>
